@@ -209,7 +209,7 @@ Hash有几个显著特点：
 
  在项目中Hash用到的非常多， 拿最常用的MD5来详细说明使用场景 
 
-##### [MD5](https://zh.wikipedia.org/wiki/MD5)举例应用
+##### MD5举例应用
 
 一种被广泛使用的密码散列函数，可以产生出一个128位（16字节）的散列值（hash value），用于确保信息传输完整一致。
 
@@ -303,7 +303,7 @@ HMAC 简单来说就是动态盐，一个用户一个盐
 
 那么如何在这时间和空间两者之间，取到一个平衡呢？ 往下看**彩虹表法**
 
-##### [彩虹表法](https://zh.wikipedia.org/wiki/彩虹表)
+##### 彩虹表法
 
 > 维基百科：**[彩虹表](https://zh.wikipedia.org/wiki/彩虹表)**是一个用于加密散列函数逆运算的预先计算好的表，常用于破解加密过的密码散列。 彩虹表常常用于破解长度固定且包含的字符范围固定的密码（如信用卡、数字等）。这是[以空间换时间](https://zh.wikipedia.org/wiki/以空間換時間)的典型实践，比[暴力破解](https://zh.wikipedia.org/wiki/暴力破解)（[Brute force](https://en.wikipedia.org/wiki/Brute-force_attack)）使用的时间更少，空间更多；但与储存密码空间中的每一个密码及其对应的哈希值（Hash）实现的查找表相比，其花费的时间更多，空间更少。使用[加盐](https://zh.wikipedia.org/wiki/盐_(密码学))的[密钥派生函数](https://zh.wikipedia.org/wiki/密钥派生函数)可以使这种攻击难以实现。
 
