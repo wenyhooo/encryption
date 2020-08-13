@@ -4,27 +4,7 @@
 
 ## iOS常用的编码和加密
 
-* [iOS常用的编码和加密](#ios常用的编码和加密)
-   * [base64](#base64)
-   * [UTF-8](#utf-8)
-   * [常见加密算法](#常见加密算法)
-      * [非对称加密](#非对称加密)
-      * [对称加密](#对称加密)
-         * [1、密钥](#1密钥)
-         * [2、填充](#2填充)
-         * [3、AES的五种模式](#3aes的五种模式)
-      * [Hash](#hash)
-         * [SHA-1 与 MD5区别](#sha-1-与-md5区别)
-         * [<a href="https://zh.wikipedia.org/wiki/MD5" rel="nofollow">MD5</a>举例应用](#md5举例应用)
-         * [MD5没有解密，那它就绝对安全吗？](#md5没有解密那它就绝对安全吗)
-         * [加盐（salt）方案为此诞生](#加盐salt方案为此诞生)
-         * [加盐（salt）安全吗？](#加盐salt安全吗)
-         * [”HMAC加密方案“为此诞生](#hmac加密方案为此诞生)
-         * [HMAC了还有破绽吗？](#hmac了还有破绽吗)
-      * [破解MD5](#破解md5)
-         * [暴力枚举法：](#暴力枚举法)
-         * [字典法：](#字典法)
-         * [<a href="https://zh.wikipedia.org/wiki/彩虹表" rel="nofollow">彩虹表法</a>](#彩虹表法)
+[TOC]
 
 我们平时所接触的大多数是base64编码、UTF-8和一些加密算法（md5等），下面就聊聊这几种东西到底都是什么？
 
@@ -308,3 +288,4 @@ HMAC 简单来说就是动态盐，一个用户一个盐
 > 维基百科：**[彩虹表](https://zh.wikipedia.org/wiki/彩虹表)**是一个用于加密散列函数逆运算的预先计算好的表，常用于破解加密过的密码散列。 彩虹表常常用于破解长度固定且包含的字符范围固定的密码（如信用卡、数字等）。这是[以空间换时间](https://zh.wikipedia.org/wiki/以空間換時間)的典型实践，比[暴力破解](https://zh.wikipedia.org/wiki/暴力破解)（[Brute force](https://en.wikipedia.org/wiki/Brute-force_attack)）使用的时间更少，空间更多；但与储存密码空间中的每一个密码及其对应的哈希值（Hash）实现的查找表相比，其花费的时间更多，空间更少。使用[加盐](https://zh.wikipedia.org/wiki/盐_(密码学))的[密钥派生函数](https://zh.wikipedia.org/wiki/密钥派生函数)可以使这种攻击难以实现。
 
 [彩虹表法相关文章](https://www.cnblogs.com/shoshana-kong/p/11468330.html)
+
